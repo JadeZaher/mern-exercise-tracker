@@ -1,22 +1,32 @@
-import {BrowserRouter as Router, Route} from "react-router-dom";
-import Exercise from "../backend/models/exercises.model";
+import { BrowserRouter as Router , Route, Routes} from "react-router-dom";
 import './App.css';
-import Navbar from "./components/navbar.component"
-import ExercisesList from "./components/exercises-list.component";
-import EditExercise from "./components/edit-exercise.component";
-import CreateExercise from "./components/create-exercise.component";
-import CreateUser from "./components/create-user.component";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+//import Exercise from "../backend/models/exercises.model";
+import Navbar from "./Components/navbar.component"
+import ExerciseList from "./Components/exercises-list.component";
+import EditExercise from "./Components/edit-exercises.component";
+import CreateExercise from "./Components/create-exercise.component";
+import CreateUser from "./Components/create-user.component";
 
 function App() {
   return (
-    <Router>
+    
+      <Router>
+      <div className="container">
       <Navbar />
-      <br/>
-      <Route path="/" exact component = {ExerciseList}/>
-      <Route path="/edit/:id" component = {EditExercise}/>
-      <Route path="/create" component = {CreateExercise}/>
-      <Route path="/delete" component = {DeleteExercise}/>
-    </Router>
+        
+        <br/>
+        <Routes>
+        <Route path="/" exact element = {<ExerciseList/>}/>
+        <Route path="/update/:id" element = {<EditExercise/>}/>
+        <Route path="/create" element = {<CreateExercise/>}/>
+        <Route path="/user" element = {<CreateUser/>}/>
+        </Routes>
+        
+        </div>
+      </Router>
+    
   );
 }
 
