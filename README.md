@@ -34,6 +34,7 @@ Display Name,
 Profile Picture,
 Exercises completed today,
 Exercises completed in total, 
+Minutes Exercised,
 Meals today,
 Total calories today,
 Macro breakdown pie chart,
@@ -41,7 +42,7 @@ Mindhacking Sessions today,
 Mindhacking Sessions in total
 
 Exercise Tracker, Meal Tracker, and Mind Hacking Component:
-TrackerList, TrackerCard, EntryView, EntryEdit, EntryDelete
+Sub Components: TrackerList, TrackerCard, EntryView, EntryEdit, EntryDelete
 Display all submitted entries on cards in a list. Each with an option to view, edit, and delete in a modal. 
 
 ## Node.js as a js runtime environment to grant us the ability to execute js code outside the browser and user 3rd party libraries
