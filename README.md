@@ -7,7 +7,7 @@ send mail for email management, aws s3 for media storage, D3 for data visualizat
 Schemas - 
 Users: UsernameID, Display Name, Profile Picture
 Exercises: UsernameID, Duration, Intensity, Description
-Diet: UsernameID, Meal, Calories, Carbs, Fat, Protein, Meal Photo
+Diet: UsernameID, Meal Description, Calories, Carbs, Fat, Protein, Meal Photo
 Mind Hacking Session: UsernameID, Duration, Mantra, Reflection
 
 ## Express to handle routes, http function endpoints and port listeners, axios to make http requests from the front end

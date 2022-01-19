@@ -9,6 +9,8 @@ const userSchema = new Schema(
             unique:true,
             minlength: 3
         },
+        displayName:{type: String, required:true},
+        profilePicUrl:{type: String, required:true}
     }, 
     {
         timeStamps : true

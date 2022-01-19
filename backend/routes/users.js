@@ -2,7 +2,7 @@ const router = require('express').Router();
 //this will be a mongoose made model to interact with the express Router
 let User = require('../models/user.model');
 
-//RETURNS A JSON OF ALL USERS user a get  request is made to url/user
+//RETURNS A JSON OF ALL USERS when a get  request is made to url/user
 router.route('/').get((req, res) => {
     User.find()
         .then(users => res.json(users))
